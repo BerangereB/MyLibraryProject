@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/parent_layout_padding"
+    tools:context="bourdoulous.fr.mylibrary.Accounts.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bungee_shade"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/textColorWhite"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="50dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/appTitle"
+            android:theme="@style/TxtInputLayoutLogin">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/account"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:textColor="@color/textColorWhite" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameLayout"
+            android:theme="@style/TxtInputLayoutLogin"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableStart="@drawable/password"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/textColorWhite" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/sign_in"
+            style="@style/ButtonLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLayout"
+            android:text="@string/i_sign_in" />
+
+        <TextView
+            android:id="@+id/password_missed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_in"
+            android:layout_marginTop="20dp"
+            android:text="@string/i_meessed_my_password"
+            android:textAlignment="center"
+            android:textColor="@color/textColorWhite"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:id="@+id/orLined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_missed"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/textColorWhite"
+                android:text="@string/or" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="#ffffff" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orLined"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="@string/sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>
+

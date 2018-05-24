@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">MyLibrary</string>
+
+    <!-- LOGIN -->
+    <string name="username">Identifiant</string>
+    <string name="password">Mot de passe</string>
+    <string name="i_sign_in">JE M\'IDENTIFIE</string>
+    <string name="i_meessed_my_password">J\'ai oublié mon mot de passe</string>
+    <string name="sign_up">Je m\'inscris</string>
+
+    <!-- ERREURS -->
+    <string name="username_doesnt_exist">Ce nom d\'utilisateur n\'existe pas</string>
+    <string name="empty_fields">Champ obligatoire</string>
+    <string name="wrong_password">Mauvais mot de passe</string>
+    <string name="wrong_answer">Mauvaise réponse</string>
+    <string name="username_always_exists">Cet identifiant existe déjà</string>
+
+    <!-- SIGN UP -->
+    <string name="your_username"> Votre identifiant</string>
+    <string name="what_favorite_book_question">Quelle est votre livre préféré ?</string>
+    <string name="your_answer"> Votre réponse secrete</string>
+    <string name="password_check">Vérification mot de passe</string>
+    <string name="firstname">Prénom</string>
+
+    <string name="creation_succeed">Compte créé avec succès</string>
+    <string name="validate">VALIDER</string>
+
+    <!-- BOOK DESCRIPTION -->
+    <string name="unavailable">indisponible</string>
+    <string name="link_title">Lien :</string>
+    <string name="categories_title">Catégorie(s) :</string>
+    <string name="count_page_title">Pages :</string>
+    <string name="description_title">Description :</string>
+    <string name="date_title">Date :</string>
+    <string name="author_title">Auteur :</string>
+    <string name="title">Titre</string>
+    <string name="publisher_title">Editeur :</string>
+
+    <!-- RECHERCHE -->
+    <string name="launch_search">CHERCHER</string>
+    <string name="author">Auteur</string>
+    <string name="results">Résultats</string>
+
+    <string name="language_titlte">Langue :</string>
+    <string name="french">Français</string>
+    <string name="english">Anglais</string>
+
+
+
+
+
+    <!-- MAIN MENU OPTIONS -->
+    <string name="sure_want_delete_account">Etes-vous sûr de vouloir supprimer ce compte?</string>
+
+    <!-- ADD BOOK -->
+    <string name="publisher">Editeur</string>
+    <string name="information">Informations</string>
+    <string name="notes">Notes</string>
+    <string name="i_ve_read_it">J\'ai lu ce livre</string>
+    <string name="valid_info">Valider les informations</string>
+    <string name="reading_date">Date de lecture : </string>
+    <string name="category">Catégorie</string>
+    <string name="add_this_book">Ajouter le livre</string>
+
+
+    <!-- OTHERS -->
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="or">ou</string>
+    <string name="all">Toutes</string>
+    <string name="update_personal_info">METTRE A JOUR MES INFORMATIONS</string>
+    <string name="confirm_password">Confirmer mot de passe</string>
+    <string name="new_password">Nouveau mot de passe</string>
+    <string name="change_password">Changer de mot de passe</string>
+    <string name="your_favorite_book_title">Le titre de votre livre préféré</string>
+    <string name="your_pwd_is">Votre mot de passe est</string>
+    <string name="keep_it">. Gardez le précieusement!</string>
+    <string name="my_space">Ma bibliothèque</string>
+    <string name="dd_mm_yyyy">jj/mm/aaaa</string>
+    <string name="change_image">Changer d\'avatar</string>
+    <string name="from_cam">Depuis l\'appareil photo</string>
+    <string name="from_sd_card">Depuis la Gallerie de photos</string>
+    <string name="invalid_password_format">Mot de passe trop court. Doit contenir au moins 5 caractères!</string>
+    <string name="different_password">Ce mot de passe est différent du premier</string>
+    <string name="by">par </string>
+    <string name="published_in">publié le </string>
+    <string name="pages"> pages</string>
+    <string name="unavailable_category">Catégorie indisponible</string>
+    <string name="unavailable_author">Auteur indisponible</string>
+    <string name="book_added_in_your_library">Le livre a été ajouté à votre bibliothèque</string>
+    <string name="this_book_already_exists">Ce livre est déjà présent dans votre bibliothèque</string>
+    <string name="remind_me_to_read">Voulez-vous créer un événement dans votre calendrier pour vous rappeler de lire ce livre?</string>
+    <string name="remind_to_read_">Penser à lire</string>
+    <string name="published_date">Date de publication (aaaa-mm-jj)</string>
+    <string name="disconnect">Déconnexion</string>
+    <string name="account_settings">Réglages du compte</string>
+    <string name="home">Menu principal</string>
+    <string name="search">Rechercher un livre</string>
+    <string name="no_results_check_info">Aucun résultat pour cette recherche. Veuillez vérifier l\'orthographe et esssayer à nouveau.</string>
+    <string name="no_books_no_pdf">Action impossible car vous n\'avez pas encore de livres dans votre bibliothèque</string>
+    <string name="pdf_conversion_loading">Création du fichier pdf en cours ...</string>
+    <string name="pdf_download_end">Pdf achevé</string>
+    <string name="grade_given">Note attribuée :</string>
+    <string name="wrong_format">Mauvais format</string>
+    <string name="main_menu_activity_title">Menu Principal</string>
+    <string name="research_activity_title">Recherche</string>
+    <string name="personal_space_activity_title">Espace personnel</string>
+    <string name="sign_up_activity_title">INSCRIPTION</string>
+    <string name="internet_connection_error">Erreur de connexion internet !</string>
+    <string name="check_internet_connection">Veuillez vérifier votre connexion Internet et recommencez.</string>
+    <string name="try_again">REESAYER</string>
+    <string name="exit">QUITTER</string>
+    <string name="total_books">Nombre total de livres</string>
+    <string name="favorite_author">Auteur(s) préféré(s)</string>
+    <string name="best_year">L\'année durant laquelle vous avez le plus lu</string>
+    <string name="mean_grade">Note moyenne</string>
+    <string name="you_can_extract_pdf">Vous pouvez télécharger un fichier pdf détaillé de votre bibliothèque en cliquant sur le bouton suivant.</string>
+    <string name="generate_pdf">Générer PDF</string>
+    <string name="recap_books">Récapitulatif des ouvrages disponibles dans la bibliothèque numérique de</string>
+    <string name="did_in_date">Réalisé le</string>
+    <string name="one_books">1) Résumé de vos ouvrages</string>
+    <string name="total_read_books">Nombre d\'ouvrages lus :</string>
+    <string name="total_to_read_books">Nombre d\'ouvrages à lire :</string>
+    <string name="two_some_stats">2) Quelques statistiques</string>
+    <string name="recurrent_author">Auteurs apparaissant le plus souvent</string>
+    <string name="min_grade_books">Livres les moins bien notés</string>
+    <string name="max_grade_book">Livres les mieux notés</string>
+    <string name="delete_account">SUPPRIMER LE COMPTE</string>
+    <string name="new_book_activity_title">NOUVEAU LIVRE</string>
+    <string name="read">LU</string>
+    <string name="to_read">A LIRE</string>
+    <string name="update_account_activity_title">MISE A JOUR DU COMPTE</string>
+    <string name="get_password_lost">RECUPERATION DE MOT DE PASSE</string>
+
+
+</resources>

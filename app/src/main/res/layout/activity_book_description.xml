@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bourdoulous.fr.mylibrary.SearchABook.BookDescriptionActivity"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarBook"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="BOOK DESCRIPTION"
+        app:titleTextColor="@color/textColorWhite"/>
+
+    <RelativeLayout
+        android:id="@+id/mainDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/image_not_found_icon"
+            android:contentDescription="" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_marginStart="10dp"
+            android:text="@string/title"
+            android:textColor="@color/textColorWhite"
+            android:textSize="@dimen/titlesDescriptionBook"
+            android:textStyle="bold"
+            android:fontFamily="casual"/>
+
+        <TextView
+            android:id="@+id/txtAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/imageView"
+            android:layout_below="@id/txtTitle"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textColorWhite" />
+
+
+
+        <TextView
+            android:id="@+id/txtPublishedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtAuthor"
+            android:layout_toEndOf="@id/imageView"
+            android:text="@string/unavailable"
+            android:textColor="@color/textColorWhite" />
+
+
+        <TextView
+            android:id="@+id/txtCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/txtPublishedDate"
+            android:layout_toEndOf="@id/imageView"
+            android:text="@string/unavailable"
+            android:textColor="@color/textColorWhite" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:verticalScrollbarPosition="right"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/moreDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description_title"
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/titlesDescriptionBook"
+                android:textStyle="bold"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:text="@string/unavailable"
+                android:textColor="@color/textColorBlack"/>
+
+            <TextView
+                android:id="@+id/countPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/count_page_title"
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/titlesDescriptionBook"
+                android:textStyle="bold"
+                android:fontFamily="casual"/>
+
+            <TextView
+                android:id="@+id/txtCountPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/unavailable"
+                android:textColor="@color/textColorBlack" />
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/publisher_title"
+                android:textColor="@color/textColorBlack"
+                android:fontFamily="casual"
+                android:textSize="@dimen/titlesDescriptionBook"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPublisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unavailable"
+                android:textColor="@color/textColorBlack" />
+
+
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/link_title"
+                android:textColor="@color/textColorBlack"
+                android:textSize="@dimen/titlesDescriptionBook"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:id="@+id/txtLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorLink="@color/colorPrimary"
+                android:autoLink="web"
+                android:text="@string/unavailable"
+                android:textColor="@color/textColorBlack" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

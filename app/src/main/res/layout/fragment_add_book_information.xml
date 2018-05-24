@@ -1,0 +1,101 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="bourdoulous.fr.mylibrary.Library.AddBook.AddBookFormActivity"
+        android:padding="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!-- Input : title -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/titleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/TxtInputLayout">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/title"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Input : author -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/authorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/titleLayout"
+                android:theme="@style/TxtInputLayout">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/author"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Input : publisher -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/publisherLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/authorLayout"
+                android:theme="@style/TxtInputLayout">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/publisher"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Input : publisher -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/categoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/publisherLayout"
+                android:theme="@style/TxtInputLayout">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/category"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- Input : publishedDate -->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/publishedDateLayout"
+                android:layout_below="@id/categoryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/TxtInputLayout">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/published_date"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/validButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/publishedDateLayout"
+                android:layout_centerHorizontal="true"
+                style="@style/ButtonGrey"
+                android:text="@string/valid_info"
+                android:onClick="valid"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+

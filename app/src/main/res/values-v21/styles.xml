@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TxtInputLayoutLogin" parent="Widget.Design.TextInputLayout">
+        <item name="hintTextAppearance">@style/TextAppearance.AppCompat.Inverse</item>
+        <item name="android:textSize">@dimen/txtInputLayoutsize</item>
+        <item name="android:textColorHint">@color/textColorWhite</item>
+        <item name="android:backgroundTint">@color/textColorWhite</item>
+    </style>
+</resources>

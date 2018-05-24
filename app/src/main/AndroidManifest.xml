@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bourdoulous.fr.mylibrary">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivities.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- HOME PAGE -->
+        <activity
+            android:name=".Accounts.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".SearchABook.SearchResultActivity"
+            android:parentActivityName=".SearchABook.SearchActivity" />
+        <activity android:name=".SearchABook.BookDescriptionActivity" />
+        <activity
+            android:name=".WelcomeActivities.MainActivity"
+            android:label="@string/main_menu_activity_title" />
+        <activity
+            android:name=".SearchABook.SearchActivity"
+            android:label="@string/research_activity_title"
+            android:parentActivityName=".WelcomeActivities.MainActivity"
+            android:roundIcon="@drawable/search"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Library.AccountActivity"
+            android:icon="@drawable/account"
+            android:label="@string/personal_space_activity_title"
+            android:parentActivityName=".WelcomeActivities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Accounts.SignUpActivity"
+            android:label="@string/sign_up_activity_title"
+            android:parentActivityName=".Accounts.LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Library.AddBook.AddBookFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity
+            android:name=".Accounts.PasswordMissedActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Accounts.UpdateAccountActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:parentActivityName=".WelcomeActivities.MainActivity"/>
+
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+
+        <service
+            android:name=".DataFetchers.MyIntentService"
+            android:exported="false" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

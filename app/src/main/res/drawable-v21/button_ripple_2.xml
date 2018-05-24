@@ -1,0 +1,21 @@
+
+<ripple
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/buttonPressed_2">
+    <item>
+        <shape>
+            <corners
+                android:radius="5dp"
+                />
+            <solid
+                android:color="#4f7664"/>
+            <stroke
+                android:width="0dp" />
+            <size
+                android:width="270dp"
+                android:height="50dp" />
+        </shape>
+
+    </item>
+
+</ripple>
