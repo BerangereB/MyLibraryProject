@@ -1,4 +1,4 @@
-# MyLibrary
+# MyLibrary (Application ANDROID)
 Projet Android 3A ESIEA
 
 ________
